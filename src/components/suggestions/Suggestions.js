@@ -81,7 +81,7 @@ class Suggestions extends Component {
 
         return (
             <ul className="suggestions">
-                {!word && suggestions.length > 0 && suggestions.map( callback )}
+                {!word && Array.isArray( suggestions ) && suggestions.length > 0 && suggestions.map( callback )}
             </ul>
         );
     }
