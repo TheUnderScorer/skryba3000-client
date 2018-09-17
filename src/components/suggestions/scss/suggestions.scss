@@ -1,0 +1,29 @@
+@import '../../../variables';
+
+.suggestions {
+	position: absolute;
+	top: 99%;
+	background: transparent;
+	list-style: none;
+	z-index: 2;
+	margin: 0 auto;
+	width: 50%;
+	box-shadow: 3px 6px 5px -4px rgba(0, 0, 0, 0.75);
+	max-height: 200px;
+	overflow: auto;
+	left: 0;
+	right: 33px;
+	color: $black;
+
+	li {
+		padding: 10px;
+		cursor: pointer;
+		transition: all .3s;
+		background: #252527;
+		color: $white;
+
+		&:hover {
+			background: #4a4a4a;
+		}
+	}
+}

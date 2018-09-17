@@ -1,0 +1,49 @@
+@import '../../../variables';
+
+$tableBg: #121213;
+$border: #252527;
+
+.words-table {
+
+	width: 100%;
+	text-align: center;
+	color: $white;
+	min-width: 680px;
+
+	.form-section {
+		input {
+			width: 100%;
+		}
+	}
+
+	thead {
+		background: $tableBg;
+	}
+
+	tr {
+		td {
+			padding: 10px;
+			width: 50%;
+			border: 1px solid $border !important;
+
+			input {
+				background-color: $border;
+			}
+		}
+	}
+
+	.polish {
+		position: static;
+	}
+
+	tbody {
+		tr {
+			background: $tableBg;
+		}
+	}
+
+	.edit-word {
+		margin-right: 10%;
+	}
+
+}

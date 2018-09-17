@@ -1,0 +1,70 @@
+@import '../../../variables';
+
+.form-section {
+
+	&, span, input {
+		color: $white;
+	}
+
+	&.checkboxes {
+		display: flex;
+		flex-direction: row;
+	}
+
+	select {
+		padding: 10px;
+		cursor: pointer;
+	}
+
+	&.main {
+		flex-direction: row;
+
+		@media(max-width: $mobile) {
+			flex-wrap: wrap;
+
+			> div:first-of-type {
+				margin-bottom: 20px;
+			}
+		}
+
+		input {
+			width: 70%;
+			padding: 20px;
+			background: transparent;
+			font-size: 20px;
+			border: none;
+		}
+
+		button {
+			position: relative;
+			left: 20px;
+
+			&[disabled] {
+				background-color: rgb(177, 152, 152) !important;
+			}
+		}
+
+	}
+
+	&.buttons {
+		flex-direction: row;
+
+		@media(max-width: $mobile) {
+			flex-wrap: wrap;
+
+			> button {
+				margin: 10px 0 !important;
+				width: 100%;
+			}
+		}
+
+		> button {
+			margin: 0 20px;
+			padding: 10px;
+
+			&:last-of-type {
+				margin-left: auto;
+			}
+		}
+	}
+}

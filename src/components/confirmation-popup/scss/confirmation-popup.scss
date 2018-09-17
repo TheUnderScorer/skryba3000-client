@@ -1,0 +1,55 @@
+@import '../../../variables';
+@import '../../../mixins';
+
+.popup-container {
+
+	&.visible {
+
+		.confirmation-popup, .popup-overlay {
+			opacity: 1;
+			visibility: visible;
+		}
+
+	}
+
+	.confirmation-popup {
+		max-width: 450px;
+		max-height: 150px;
+		background: $white;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		position: fixed;
+		top: 10%;
+		margin: 0 auto;
+		opacity: 0;
+		visibility: hidden;
+		transition: all .3s;
+		z-index: 3;
+		border-radius: 10px;
+		padding: 20px;
+		@include center;
+		flex-direction: column;
+
+		.actions {
+			margin-top: 20px;
+
+			button {
+				margin: 0 20px;
+			}
+		}
+	}
+
+	.popup-overlay {
+		background: rgba(0, 0, 0, 0.5);
+		position: fixed;
+		top: 0;
+		height: 100vh;
+		width: 100vw;
+		z-index: 2;
+		opacity: 0;
+		visibility: hidden;
+		transition: all .3s;
+	}
+
+}

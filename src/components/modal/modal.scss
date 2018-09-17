@@ -1,0 +1,42 @@
+@import '../../variables';
+
+.modal-outer {
+
+	&.visible {
+
+		.modal, .overlay {
+			opacity: 1;
+			visibility: visible;
+		}
+
+	}
+
+	.modal {
+		width: 80vw;
+		height: 80vh;
+		background: $white;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		position: fixed;
+		top: 10%;
+		margin: 0 auto;
+		z-index: 2;
+		opacity: 0;
+		visibility: hidden;
+		transition: all .3s;
+		z-index: 3;
+	}
+
+	.overlay {
+		background: rgba(0, 0, 0, 0.5);
+		position: fixed;
+		top: 0;
+		height: 100vh;
+		width: 100vw;
+		z-index: 2;
+		opacity: 0;
+		visibility: hidden;
+		transition: all .3s;
+	}
+}

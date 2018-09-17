@@ -1,0 +1,44 @@
+@import '../../../variables';
+@import '../../../mixins';
+
+.form-section {
+	display: flex;
+	padding: 10px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	label {
+		font-size: 16px;
+		margin-bottom: 5px;
+	}
+	input {
+		padding: 10px;
+		box-sizing: border-box;
+		outline: none;
+		border: none;
+		border-bottom: 1px solid #4a4a4a;
+		&:focus {
+			border-color: $blue;
+		}
+	}
+
+	.input-notice {
+		color: $red;
+		font-size: 14px;
+		bottom: -10px;
+	}
+}
+
+.half-sections {
+	@include center;
+	flex-wrap: wrap;
+
+	.form-section {
+		width: 50%;
+
+		&.full-section {
+			width: 100%;
+		}
+
+	}
+}
