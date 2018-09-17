@@ -8,6 +8,7 @@ import FormSection from '../form/FormSection';
 import Input from '@material-ui/core/Input/Input';
 import WordButtons from '../word-buttons/WordButtons';
 import Suggestions from '../suggestions/Suggestions';
+import './scss/word-manager.scss';
 
 class WordManager extends Component {
 
@@ -118,7 +119,7 @@ class WordManager extends Component {
 
         if ( editedLang === wordLang ) {
             return (
-                <FormSection>
+                <FormSection className="word-input-container">
                     <Input
                         autoComplete="off"
                         className="md-text"
