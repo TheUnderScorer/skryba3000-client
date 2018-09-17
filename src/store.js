@@ -9,8 +9,5 @@ const Middleware = [ thunk ];
 export const Store = createStore(
     rootReducer,
     InitialState,
-    compose(
-        applyMiddleware( ...Middleware ),
-        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-    )
+    applyMiddleware( ...Middleware ),
 );
