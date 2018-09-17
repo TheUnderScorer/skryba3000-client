@@ -137,6 +137,15 @@ class Prompt extends Component {
                     <div className="actions">
 
                         <Button
+                            onClick={this.handleDeny}
+                            className="confirmation"
+                            variant="raised"
+                            type="button"
+                            color="secondary">
+                            Cancel
+                        </Button>
+
+                        <Button
                             onClick={this.handleConfirmation}
                             className="confirmation"
                             variant="raised"
@@ -145,14 +154,6 @@ class Prompt extends Component {
                             Continue
                         </Button>
 
-                        <Button
-                            onClick={this.handleDeny}
-                            className="confirmation"
-                            variant="raised"
-                            type="button"
-                            color="secondary">
-                            Cancel
-                        </Button>
                     </div>
                 </div>
 
