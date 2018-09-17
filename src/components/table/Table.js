@@ -146,7 +146,7 @@ class Table extends Component {
 
             <div className="table-container">
                 <Buttons/>
-                <Loader visible={this.props.isVisible}/>
+                <Loader visible={this.props.isLoading}/>
                 <table className="words-table">
                     <thead>
                     <tr>

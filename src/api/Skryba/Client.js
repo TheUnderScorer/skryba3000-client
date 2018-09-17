@@ -10,7 +10,7 @@ export default class Client {
     static token = '';
 
     static axios = axios.create( {
-        baseURL:         'http://localhost:5000/api',
+        baseURL:         'https://api-skryba3000.herokuapp.com/api',
         headers:         {
             'Content-Type': 'application/json'
         },
